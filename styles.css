@@ -47,3 +47,30 @@ nav ul{
 .navbar li{
     list-style: none;
 }
+
+/* ---------------------------Starting section2-------------------- */
+
+.section2{
+
+}
+
+article{
+    display: flex;
+}
+
+#b1{
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+
+#b2{
+    background-image: url(/images/desktop/image-photography.jpg);
+}
+
+#p2{
+    display: flex;
+    width: 720px;
+}
+
+.last-article{
+    height: 71vh;
+}
