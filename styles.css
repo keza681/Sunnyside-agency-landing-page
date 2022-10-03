@@ -1,0 +1,49 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.section1{
+    background-image:url(/images/desktop/image-header.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 847px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 340px;
+    padding-right: 30px;
+}
+
+.heading1 h1{
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: .5rem;
+    font-weight: 900;
+    margin: 4rem;
+    font-family: 'Fraunces', serif;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+}
+
+.navbar li{
+    list-style: none;
+}
