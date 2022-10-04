@@ -1,39 +1,46 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-size: 18px;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     padding: 0px;
     margin: 0px;
 }
 
-.section1{
-    background-image:url(/images/desktop/image-header.png);
+.section1 {
+    background-image: url(/images/desktop/image-header.png);
     background-position: center;
     background-size: cover;
     position: relative;
     height: 847px;
+    padding: 2.5rem;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     width: 340px;
     padding-right: 30px;
 }
 
-.heading1 h1{
+.heading1 {
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.heading1 h1 {
     font-size: 3rem;
     color: hsl(0, 0%, 100%);
     letter-spacing: .5rem;
@@ -51,38 +58,153 @@ nav ul{
     font-family: 'Barlow', sans-serif;
 }
 
-.navbar li{
+.navbar li {
     list-style: none;
+}
+
+/* .section1 header nav ul li:nth-child(4) a { */
+#contact-hover {
+    padding: 0.7rem 1rem;
+    color: rgb(35, 48, 62);
+    background: rgb(255, 255, 255);
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+    font-family: Fraunces, serif;
+    font-size: 0.8rem;
+}
+
+#contact-hover:hover {
+    background: hsla(0, 0%, 100%, 0.37);
+    color: hsl(0, 0%, 100%);
 }
 
 /* ---------------------------Starting section2-------------------- */
 
-
-article{
+.section2 {
     display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
-#b1{
+article {
+    display: flex;
+    /* flex-basis: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center; */
+}
+
+#b1 {
     background-image: url(/images/desktop/image-graphic-design.jpg);
 }
 
-#b2{
+#b2 {
     background-image: url(/images/desktop/image-photography.jpg);
 }
 
-#p2{
+#p2 {
     display: flex;
     width: 720px;
 }
 
-.last-article{
+.last-article {
     height: 71vh;
 }
 
+article .left-column {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article .left-column .left-col-text {
+    width: 70%;
+    height: 40%;
+}
+
+article .left-column .left-col-text h2 {
+    font-size: 2.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+
+article .left-column .left-col-text p {
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Barlow', sans-serif;
+}
+
+article .left-column .left-col-text a {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+}
+
+article:nth-child(1) .left-column .left-col-text a::before {
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    width: 100%;
+    height: 0.7rem;
+    background: hsla(51, 100%, 49%, 0.404);
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: .35s;
+}
+
+article:nth-child(1) .left-column .left-col-text a:hover::before {
+    background: hsl(51, 100%, 49%);
+}
+
+article:nth-child(2) .left-column .left-col-text a::before {
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    width: 100%;
+    height: 0.7rem;
+    background: hsla(7, 99%, 70%, 0.493);
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: .35s;
+}
+
+article:nth-child(2) .left-column .left-col-text a:hover::before {
+    background: hsl(7, 99%, 70%);
+}
 
 /* --------------------section3-------------------------------- */
 
-.testimonials-row{
+section3 {
+    text-align: center;
+}
+
+.tex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tex-center h3 {
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+
+.testimonials-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,11 +213,36 @@ article{
     margin: 0;
     font-size: 18px;
     box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.testim-1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testim-1 img {
+    width: 30%;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.testim-1 p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 25px;
+    font-weight: bold;
 }
 
 /* -----------------------section4---------------------------------- */
 
-.gallery{
+.gallery {
     display: flex;
     /* align-items: center; */
     /* justify-content: space-between; */
@@ -103,7 +250,7 @@ article{
     /* overflow: hidden; */
 }
 
-.gallery picture img{
+.gallery picture img {
     height: 593px;
     width: 360px;
 }
@@ -122,41 +269,41 @@ footer nav a img {
     margin-right: 4rem;
 }
 
-footer{
+footer {
     padding: 3rem;
     background: hsl(168, 32%, 55%);
     text-align: center;
     height: 365px;
 }
 
-footer nav > ul{
+footer nav>ul {
     display: flex;
     display: flex;
     margin: 2rem 0 4rem;
 }
 
-footer nav ul li{
+footer nav ul li {
     list-style: none;
 }
 
-footer nav ul li a{
+footer nav ul li a {
     text-decoration: none;
     color: black;
 }
 
-footer nav{
+footer nav {
     width: 400px;
     margin-left: 503px;
 }
 
-footer > ul{
+footer>ul {
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-right: 624px; */
 }
 
-footer > ul li{
+footer>ul li {
     list-style: none;
     /* justify-content: space-between; */
     /* gap: 20px; */
@@ -165,13 +312,13 @@ footer > ul li{
     margin: 0.7rem;
 }
 
-footer .attribution{
+footer .attribution {
     font-size: .9rem;
     text-align: center;
     font-family: 'Barlow', sans-serif;
 }
 
-footer .attribution a{
+footer .attribution a {
     font-size: .9rem;
     /* color: hsl(228, 45%, 44%); */
     text-decoration: none;
