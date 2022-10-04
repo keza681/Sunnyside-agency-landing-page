@@ -125,6 +125,20 @@ article .left-column .left-col-text {
     height: 40%;
 }
 
+#graphic{
+    margin-top: 360px;
+    justify-content: center;
+    text-align: center;
+}
+
+#heading3{
+    font-size: 1.5rem;
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 1rem;
+    font-family: 'Fraunces', serif;
+    margin-right: 90px;
+}
+
 article .left-column .left-col-text h2 {
     font-size: 2.9rem;
     margin-bottom: 1.5rem;
@@ -188,8 +202,9 @@ article:nth-child(2) .left-column .left-col-text a:hover::before {
 
 /* --------------------section3-------------------------------- */
 
-section3 {
+.section3 {
     text-align: center;
+    background: hsla(42, 92%, 90%, 0.192);
 }
 
 .tex-center {
